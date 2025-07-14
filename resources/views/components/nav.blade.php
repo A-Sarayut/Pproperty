@@ -4,7 +4,7 @@
             <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">Pproperty</span>
                 <img class="h-8 w-auto"
-                    src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+                    src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=cyan&shade=600" alt="" />
             </a>
             <input type="checkbox" id="btn-side-menu" class="peer hidden">
             </input>
@@ -25,7 +25,7 @@
                         <a href="#" class="-m-1.5 p-1.5">
                             <span class="sr-only">Pproperty</span>
                             <img class="h-8 w-auto"
-                                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+                                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=cyan&shade=600"
                                 alt="" />
                         </a>
                         <span class="sr-only">Close menu</span>
@@ -61,7 +61,7 @@
             <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">Pproperty</span>
                 <img class="h-8 w-auto"
-                    src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+                    src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=cyan&shade=600"
                     alt="" />
             </a>
             {{-- <div class="relative">
@@ -206,12 +206,12 @@
         </div>
         <div class="hidden lg:flex gap-4 lg:flex-1 lg:justify-end">
             <a href="#"
-                class="rounded-md text-sm px-3.5 py-2.5 font-semibold text-indigo-500 hover:outline-1 hover:outline-indigo-600 ">
+                class="rounded-md text-sm px-3.5 py-2.5 font-semibold text-primary-700 hover:outline-1 hover:outline-primary-700 ">
                 Log in
             </a>
 
             <a href="#"
-                class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                class="rounded-md bg-primary-600 px-3.5 py-2.5 text-sm font-semibold  shadow-xs hover:bg-primary-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600">
                 Get started
             </a>
         </div>
