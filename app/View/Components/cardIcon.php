@@ -17,7 +17,7 @@ class cardIcon extends Component
     // public $url;
     // public $urlText;
 
-    public function __construct(public ?string $icon, public ?string $title, public ?string $description, public ?string $url, public ?string $urlText)
+    public function __construct(public ?string $icon, public ?string $title, public ?string $description, public ?string $url, public ?string $urlText, public ?string $align)
     {
         //
         // $this->icon = $icon;

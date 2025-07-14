@@ -1,4 +1,13 @@
-<div class="flex flex-col gap-1 items-center">
+@php
+    $textClass = match ($align) {
+        'start' => 'items-baseline',
+        'center' => 'items-center',
+        'end' => 'items-end',
+        default => 'items-center',
+    };
+@endphp
+
+<div class="flex flex-col gap-2 lg:gap-4 {{ $textClass }}">
     @if ($icon)
         <x-dynamic-component :component="$icon" class="w-12" />
     @endif
@@ -16,7 +25,7 @@
     @endif
 
     @if ($url)
-        <a href="{{ $url }}" class="flex text-sm px-3.5 py-2.5 font-semibold hover:underline">
+        <a href="{{ $url }}" class="flex text-sm font-semibold hover:underline">
             @if ($urlText)
                 {{ $urlText }}
             @else
