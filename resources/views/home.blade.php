@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Home Page')
+@section('title', 'Pproperty')
 
 @section('content')
     <div>
@@ -187,7 +187,7 @@
                 <div class="w-16 h-16 rounded-4xl bg-cover bg-center"
                     style="background-image: url('{{ asset('images/ex-reviewer.jpg') }}')">
                 </div>
-                <h3 class="text-lg font-bold">John Doe</h3>
+                <h3 class="text-lg font-bold">Benjamin Hergan</h3>
                 <p class="text-neutral-600">Investor, ABC Corp</p>
             </div>
         </section>
@@ -206,6 +206,124 @@
                     class="rounded-md text-sm px-3.5 py-2.5 font-semibold  outline-1 outline-gray-500 hover:bg-gray-300">
                     Tour
                 </a>
+            </div>
+        </section>
+
+        <section class="section-9 grid gap-16 p-4 md:p-16">
+            <div class="flex flex-col lg:flex-row gap-8 lg:px-16">
+                <h2 class="text-2xl lg:text-4xl">Stay Updated on New Properties</h2>
+                <div class="flex flex-1 flex-col gap-4">
+                    <p class="text-neutral-600 2xl:pe-16">Join our newsletter to receive the latest updates on new
+                        properties and market trends in Pattaya. Don't miss out on your dream home!
+                    </p>
+
+                    <div>
+                        <div class="flex flex-wrap gap-x-4 xl:flex-nowrap">
+                            <div class="mt-2">
+                                <input type="email" name="email" id="email" autocomplete="email"
+                                    class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-primary-600 sm:text-sm/6" />
+                            </div>
+                            <div class="mt-3">
+                                <a href="#"
+                                    class="rounded-md text-nowrap bg-primary-600 bg-gradient-to-t px-3.5 py-2.5 text-sm font-semibold shadow-xs hover:bg-primary-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600">
+                                    Sign Up
+                                </a>
+                            </div>
+                        </div>
+                        <p class="text-neutral-600 mt-2 text-xs">By clicking Sign Up, you agree to our Terms and
+                            Conditions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-10 p-4 md:p-16">
+            <div class="flex flex-col gap-x-8 gap-y-2 lg:px-16 xl:col-span-3">
+                <h3 class="text-lg font-bold">Meet</h3>
+                <h2 class="text-2xl lg:text-4xl">Our Team</h2>
+                <p class="text-neutral-600">
+                    Dedicated professionals committed to your success.
+                </p>
+            </div>
+            <div class="grid lg:px-16 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                <x-card-profile img-path="images/k-john-doe.jpg" name="John Doe" position="Sales manager"
+                    description="Expert in property sales with over 10 years of experience in Pattaya." linked-in-url="#"
+                    x-url="#" />
+                <x-card-profile img-path="images/k-jane-smith.jpg" name="Jane Smith" position="Marketing Director"
+                    description="Creative strategist specializing in digital marketing for real estate." linked-in-url="#"
+                    x-url="#" />
+                <x-card-profile img-path="images/k-michael-lee.jpg" name="Michael Lee" position="Customer Support"
+                    description="Passionate about helping clients navigate their property journeys smoothly."
+                    linked-in-url="#" x-url="#" />
+                <x-card-profile img-path="images/k-emily-chen.jpg" name="Emily Chen" position="Finance Analyst"
+                    description="Ensuring financial accuracy and transparency in all transactions." linked-in-url="#"
+                    x-url="#" />
+                <x-card-profile img-path="images/k-david-kim.jpg" name="David Kim" position="IT Specialist"
+                    description="Maintaining our website and ensuring a seamless user experience." linked-in-url="#"
+                    x-url="#" />
+                <x-card-profile img-path="images/k-sarah-johnson.jpg" name="Sarah Johnson" position="Operations Manager"
+                    description="Streamlining processes to enhance efficiency and client satisfaction." linked-in-url="#"
+                    x-url="#" />
+            </div>
+        </section>
+
+        <section class="section-11 p-4 md:p-16">
+            <div class="flex flex-col gap-x-8 gap-y-2 lg:px-16 xl:col-span-3">
+                <h2 class="text-2xl lg:text-4xl">We're hiring!</h2>
+                <p class="text-neutral-600">
+                    Join our dynamic team and grow with us!
+                </p>
+
+                <div class="mt-4">
+                    <a href="#"
+                        class="rounded-md text-sm px-3.5 py-2.5 font-semibold  outline-1 outline-gray-500 hover:bg-gray-300">
+                        Open positions
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-12 p-4 md:p-16">
+            <div class="flex flex-col gap-x-8 gap-y-2 lg:px-16 xl:col-span-3">
+                <h2 class="text-2xl lg:text-4xl">FAQs</h2>
+                <p class="text-neutral-600">
+                    Here are some common questions about buying properties in Pattaya and our services.
+                </p>
+
+                <div class="mt-4 flex flex-col gap-4">
+                    <x-card-faqs title="What services do you offer?"
+                        description="We provide a comprehensive range of services including property listings, market analysis,
+                                and legal assistance. Our team is dedicated to guiding you through every step of the buying
+                                process. We ensure a seamless experience tailored to your needs." />
+                    <x-card-faqs title="Is buying property safe?"
+                        description="Yes, buying property in Pattaya is generally safe. We assist you in navigating local laws and regulations to protect your investment. Our expert team will help you understand all necessary precautions." />
+                    <x-card-faqs title="What are the fees?"
+                        description="Fees can vary based on property type and location. Typically, buyers should expect to pay transfer fees, taxes, and legal costs. We provide a transparent breakdown of all potential expenses." />
+                    <x-card-faqs title="How do I start?"
+                        description="Starting your property journey is easy! Simply contact our team for a consultation. We’ll discuss your needs and guide you through available options." />
+                    <x-card-faqs title="Can I get financing?"
+                        description="Yes, financing options are available for foreign buyers in Thailand. We can connect you with trusted financial institutions. Our team will help you understand your financing options." />
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-13 p-4 md:p-16">
+            <div class="flex flex-col gap-x-8 gap-y-2 lg:px-16 xl:col-span-3">
+                <h2 class="text-2xl lg:text-4xl">Still have questions?</h2>
+                <p class="text-neutral-600">
+                    We're here to help you!
+                </p>
+
+                <div class="mt-4">
+                    <a href="#"
+                        class="rounded-md text-sm px-3.5 py-2.5 font-semibold  outline-1 outline-gray-500 hover:bg-gray-300">
+                        Contact
+                    </a>
+                </div>
+
             </div>
         </section>
     </div>

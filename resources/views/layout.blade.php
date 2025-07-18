@@ -1524,6 +1524,7 @@
     <div class="w-full">
         @yield('content')
     </div>
+    <x-footer />
 </body>
 
 </html>
